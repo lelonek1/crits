@@ -431,7 +431,7 @@ if REMOTE_USER:
 # Handle logging after all custom configuration
 LOGGING = {
     'version': 1,
-    'disable_existing_loggers': True,
+    'disable_existing_loggers': False,
     'formatters': {
         'verbose': {
             'format': "%(levelname)s %(asctime)s %(name)s %(message)s"
@@ -459,7 +459,7 @@ LOGGING = {
         'django': {
             'handlers': ['django'],
             'propagate': True,
-            'level': 'INFO',
+            'level': 'DEBUG',
         },
         'crits': {
             'handlers': ['normal'],
