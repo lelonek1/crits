@@ -448,10 +448,16 @@ LOGGING = {
             'formatter': 'verbose',
             'filename': os.path.join(LOG_DIRECTORY, 'crits.log'),
         },
+        'django': {
+            'level': LOG_LEVEL,
+            'class': 'logging.FileHandler',
+            'formatter': 'verbose',
+            'filename': os.path.join(LOG_DIRECTORY, 'django.log'),
+        },
     },
     'loggers': {
         'django': {
-            'handlers': ['null'],
+            'handlers': ['django'],
             'propagate': True,
             'level': 'INFO',
         },
