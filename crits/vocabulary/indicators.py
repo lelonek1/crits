@@ -106,6 +106,7 @@ class IndicatorTypes(vocab):
     WHOIS_ADDR2 = "WHOIS Address 2"
     WHOIS_TELEPHONE = "WHOIS Telephone"
     XPI = "XPI"
+    OTHER = "Other"
 
 
 class IndicatorThreatTypes(vocab):
